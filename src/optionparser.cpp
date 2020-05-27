@@ -22,6 +22,8 @@ void OptionParser::init_desc()
 
 int OptionParser::parse_cmd_line(int _argc, char **_argv)
 {
+	//note that the following three lines are required to parse the command line
+	//and store the variables inside of the variable maps container
 	po::store(po::parse_command_line(_argc, _argv, _desc), _vm);
 	po::notify(_vm);
 
