@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 	}
 
 
-	//test
+	//test output
 	cout << argparse.get_filein_path() << endl;
 	cout << argparse.get_vm_filein_path() << endl;
 
